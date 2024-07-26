@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+p {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'inter';
+}
+
+/* Configuração do Header  */
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #0C70F2;
+}
+
+
+.menusuperior {
+    flex-flow: row;
+}
+
+.menusupdir {
+    justify-self: flex-end;
+    padding-top: 2px;
+}
+
+.textoheader {
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+
+}
+
+.textoheader:hover {
+    cursor: pointer;
+}
+
+/* Configuração da primeira sessão  */
+
+#intro-1 {
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-left: 28%;
+}
+
+.introducao {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-left: 22%;
+    margin-top: -50px;
+}
+
+.introducao_imagem {
+    margin-top: -10px;
+    margin-left: 30px;
+}
+
+/* CONFIGURAÇÂO DO FORMULÁRIO */
+
+.card_formulario {
+    display: flex;
+    background-color: white;
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: center;
+    /* Alinha o conteúdo horizontalmente ao centro */
+    align-items: center;
+    /* Alinha o conteúdo verticalmente ao centro */
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-radius: 16px;
+}
+
+.form-control {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 80%;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    border: none;
+}
+
+
+.form-group {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.form-group label {
+    font-size: 18px;
+    align-self: flex-start;
+    margin-left: 25px;
+    padding: 0;
+    margin-bottom: -10px;
+    margin-top: 12px;
+}
+
+.coordenadas {
+    /* font-size: large; */
+    width: 150px;
+    margin-left: 7px;
+}
+
+.btn {
+    width: 350px;
+    height: 40px;
+    margin-left: 8%;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Inter';
+    margin-top: 40px;
+    margin-bottom: 29px;
+    background-color: #0C70F2;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+/* Resultados do endereço por CEP */
+
+.buscacep_texto {
+    margin-top: 100px;
+    margin-left: 10%;
+}
+
+.buscacep_imagem {
+    margin-top: 100px;
+    margin-left: 3%;
+}
+
+.resultados {
+    display: grid;
+    place-items: center;
+}
+
+#logradouro {
+    margin-left: 2px;
+}
+
+
+.buscacepsuperior {
+    display: flex;
+    flex-flow: row;
+    place-items: center;
+    justify-content: space-evenly;
+    /* margin-left: 22%; */
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: #0C70F2;
+    color: white;
+    height: 40px;
+    width: 650px;
+    font-size: 13px;
+    font-family: 'inter';
+
+}
+
+.buscacepinferior {
+    display: flex;
+    flex-flow: row;
+    place-items: center;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: white;
+    height: 40px;
+    width: 650px;
+    font-size: 13px;
+    font-family: 'inter';
+    align-items: center;
+}
+
+.buscaInterno {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: #0C70F2;
+    margin-top: 110px;
+}
+
+.separator {
+    margin: 0 10px;
+    color: #333;
+    color: white;
+}
+
+.textofooter {
+    color: white;
+}
+
+.resultadotempopesquisa {
+    border: 1px solid #0C70F2;
+    border-radius: 16px;
+    background-color: white;
+    height: 40px;
+    width: 650px;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'inter';
+    justify-content: center;
+    align-items: center;
+
+}

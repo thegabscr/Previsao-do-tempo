@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Previsão do tempo </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- <div class="menusuperior"> -->
+        <div class="menusupesq">
+            <!-- Logo a esquerda -->
+            <img src="logo.svg" class="logomenusuperior" width=50% height=100% alt="">
+        </div>
+        <div class="menusupdir">
+            <!-- Opções a direita -->
+            <a href="#cep" class="textoheader"> Endereços </a>
+            <a href="#resultados" class="textoheader"> Previsão do tempo </a>
+        </div>
+        <!-- </div> -->
+    </header>
+
+    <div id="intro-1">
+        <div class="introducao_texto">
+            <p> Descubra com mais com precisão! <br>
+                Previsões do tempo e endereços <br>
+                em tempo real.</p>
+        </div>
+        <div class="introducao_imagem">
+            <img src="nuvens.svg" width=50% height=70% alt="">
+        </div>
+    </div>
+
+    <!-- Formulário -->
+    <div class="card_formulario">
+        <form id="infoForm">
+            <div class="form-group">
+                <label for="firstName"> Nome: </label>
+                <input type="text" class="form-control" id="firstName" placeholder="Insira seu primeiro nome">
+            </div>
+            <div class="form-group">
+                <label for="email"> E-mail: </label>
+                <input type="email" class="form-control" id="email" placeholder="Insira seu e-mail">
+            </div>
+            <div class="form-group">
+                <label for="cep"> Digite o CEP: </label>
+                <input type="text" class="form-control" id="cepInput" placeholder="Insira o CEP">
+            </div>
+            <div class="form-group">
+                <label for="coordenadas"> Digite a latitude e longitude para saber a previsão: </label>
+                <div class="introducao2">
+                    <input type="text" class="form-control coordenadas" id="coordenadas_Latitude"
+                        placeholder="Latitude">
+                    <input type="text" class="form-control coordenadas" id="coordenadas_Longitude"
+                        placeholder="Longitude">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="busca"> Acessar </button>
+        </form>
+    </div>
+
+    <!-- Seção de resultado da busca por CEP -->
+    <div class="introducao">
+        <div class="buscacep_texto" id="cep">
+            <p> Resultado da busca por CEP: </p>
+        </div>
+        <div class="buscacep_imagem">
+            <img src="localizacao.svg" width=50% height=70% alt="">
+        </div>
+    </div>
+
+    <div class="resultados">
+        <div class="buscacepsuperior">
+            <div class="buscaInterno"> Logradouro/Nome </div>
+            <div class="buscaInterno"> Bairro/Distrito </div>
+            <div class="buscaInterno"> Localidade/UF </div>
+        </div>
+        <div class="buscacepinferior">
+            <div class="buscaInterno"> <span id="logradouro"> Justino Cobra </span></div>
+            <div class="buscaInterno"> <span id="bairro"> Vila Ema </span></div>
+            <div class="buscaInterno"> <span id="estado"> SP </span></div>
+        </div>
+    </div>
+
+    <!-- Seção de RPrevisão do Tempo por CEP -->
+    <div class="introducao">
+        <div class="buscacep_texto">
+            <p> Previsão do tempo na região: </p>
+        </div>
+        <div class="buscacep_imagem">
+            <img src="nuvens2.svg" width=50% height=70% alt="">
+        </div>
+    </div>
+    <div class="resultados" id="resultados">
+        <p class="resultadotempopesquisa"><span id="tempLocal"> Previsão de tempo de acordo com a região: --° C </span>
+        </p>
+    </div>
+
+    <footer>
+        <a class="textofooter"> Termos de Uso </a>
+        <a class="separator">|</a>
+        <a class="textofooter"> Política de Privacidade </a>
+    </footer>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</html>
